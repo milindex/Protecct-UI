@@ -8,7 +8,7 @@ import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { emotionTransform, MantineEmotionProvider } from "@mantine/emotion";
-import { RootStyleRegistry } from "./EmotionRootStyleRegistry";
+// import { RootStyleRegistry } from "./EmotionRootStyleRegistry";
 import theme from "@/lib/theme";
 
 export const metadata = {
@@ -27,16 +27,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
       </head>
       <body className={plusJakartaSans.className}>
-        <RootStyleRegistry>
-          <MantineEmotionProvider>
-            <MantineProvider theme={theme} stylesTransform={emotionTransform}>
-              <Header />
-              {children}
-              <LetsConnectBanner />
-              <Footer />
-            </MantineProvider>
-          </MantineEmotionProvider>
-        </RootStyleRegistry>
+        <MantineEmotionProvider>
+          <MantineProvider theme={theme} stylesTransform={emotionTransform}>
+            <Header />
+            {children}
+            <LetsConnectBanner />
+            <Footer />
+          </MantineProvider>
+        </MantineEmotionProvider>
       </body>
     </html>
   );
