@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
+    optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
+  },
+  sassOptions: {
+    additionalData: `
+    @import "app/_styles/_mantine.scss";
+    @import "app/_styles/_variables.scss";
+    `,
   },
 };
 

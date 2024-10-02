@@ -1,0 +1,22 @@
+.topbarContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: $topbar-height;
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: $topbar-height-mobile;
+    p {
+      text-align: center;
+    }
+  }
+  border-bottom: 1px solid $primary-1;
+}
+
+.exploreLink{
+  color: $primary-5;
+  margin-left: 10px;
+  font-weight: 500;
+  border-bottom: 1px solid;
+}
