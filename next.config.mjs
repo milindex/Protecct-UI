@@ -10,12 +10,6 @@ const nextConfig = {
     @import "app/_styles/_variables.scss";
     `,
   },
-  env: {
-    // disbale cache for deployment
-    NEXT_PUBLIC_DISABLE_CACHE: "true",
-    NEXT_DISABLE_CACHE: "true",
-  },
-  distDir: "out",
 };
 
 export default nextConfig;
