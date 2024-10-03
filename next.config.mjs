@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // swcMinify: true,
+  output: "export",
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
   },
