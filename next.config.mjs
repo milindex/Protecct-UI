@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  swcMinify: true,
+  // swcMinify: true,
+  output: "export",
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
   },
@@ -9,6 +10,11 @@ const nextConfig = {
     @import "app/_styles/_mantine.scss";
     @import "app/_styles/_variables.scss";
     `,
+  },
+  env: {
+    // disbale cache for deployment
+    NEXT_PUBLIC_DISABLE_CACHE: "true",
+    NEXT_DISABLE_CACHE: "true",
   },
 };
 
