@@ -3,12 +3,10 @@ import "@/app/_styles/_global.scss";
 import Header from "@/app/_components/Header/Header";
 import Footer from "@/app/_components/Footer/Footer";
 import LetsConnectBanner from "./_components/Common/LetsConnectBanner/LetsConnectBanner";
-
 import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { emotionTransform, MantineEmotionProvider } from "@mantine/emotion";
-// import { RootStyleRegistry } from "./EmotionRootStyleRegistry";
 import theme from "@/lib/theme";
 
 export const metadata = {

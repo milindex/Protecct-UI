@@ -11,6 +11,9 @@ const nextConfig = {
     @import "app/_styles/_variables.scss";
     `,
   },
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
