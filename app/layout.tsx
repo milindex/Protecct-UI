@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className={plusJakartaSans.className}>
         <MantineEmotionProvider>
-          <MantineProvider theme={theme} stylesTransform={emotionTransform}>
+          <MantineProvider theme={theme} stylesTransform={emotionTransform} defaultColorScheme="light">
             <Header />
             {children}
             <LetsConnectBanner />
