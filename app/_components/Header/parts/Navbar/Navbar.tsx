@@ -146,7 +146,7 @@ const Navbar = () => {
         <UnstyledButton className={classes.subLink}>
           <Group wrap="nowrap" align="flex-start">
             <ThemeIcon size={34} variant="default" radius="md">
-              <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.tomato[6]} />
+              <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.tomato[7]} />
             </ThemeIcon>
             <div>
               <Text size="sm" fw={500} className={classes.subLinkTitle}>
@@ -179,7 +179,7 @@ const Navbar = () => {
                     <Box component="span" mr={5}>
                       Recognitions & Certifications
                     </Box>
-                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[6]} />
+                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
                   </Center>
                 </Link>
               </HoverCard.Target>
@@ -187,7 +187,7 @@ const Navbar = () => {
               <HoverCard.Dropdown style={{ overflow: "hidden" }}>
                 <Group justify="space-between" px="md">
                   <Text fw={500}>Recognitions & Certifications</Text>
-                  <Anchor href="#" fz="sm">
+                  <Anchor href="#" fz="sm" color="tomato.7">
                     View all
                   </Anchor>
                 </Group>
@@ -208,7 +208,7 @@ const Navbar = () => {
                         Let's discuss your project and find the best solution
                       </Text>
                     </div>
-                    <Button component="a" href="/contact-us" rightSection={<IconArrowRight size={14} />} color="tomato.4" variant="outline">
+                    <Button component="a" href="/contact-us" rightSection={<IconArrowRight size={14} />} color="tomato.7" variant="outline">
                       Get in touch
                     </Button>
                   </Group>
@@ -224,7 +224,7 @@ const Navbar = () => {
                     <Box component="span" mr={5}>
                       Services
                     </Box>
-                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[6]} />
+                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
                   </Center>
                 </Link>
               </HoverCard.Target>
@@ -269,7 +269,7 @@ const Navbar = () => {
                     <Box component="span" mr={5}>
                       Consulting & Training
                     </Box>
-                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[6]} />
+                    <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
                   </Center>
                 </a>
               </HoverCard.Target>
@@ -320,7 +320,7 @@ const Navbar = () => {
         </Group>
       </div>
 
-      <Drawer opened={drawerOpened} onClose={closeDrawer} size="100%" padding="md" title="Navigation" hiddenFrom="md" zIndex={1000000}>
+      <Drawer opened={drawerOpened} onClose={closeDrawer} size="100%" padding="md" hiddenFrom="md" zIndex={1000000}>
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 
@@ -328,9 +328,9 @@ const Navbar = () => {
           <UnstyledButton className={classes.link} onClick={toggleAwardsLinks}>
             <Center inline>
               <Box component="span" mr={5}>
-                Features
+                Recognitions & Certifications
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.blue[6]} />
+              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
             </Center>
           </UnstyledButton>
           <Collapse className={classes.subLinkGrid} in={awarrdsLinkOpened}>
@@ -341,9 +341,9 @@ const Navbar = () => {
           <UnstyledButton className={classes.link} onClick={toggleServicesLinks}>
             <Center inline>
               <Box component="span" mr={5}>
-                Features
+                SERVICES
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.blue[6]} />
+              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
             </Center>
           </UnstyledButton>
           <Collapse className={classes.subLinkGrid} in={servicesLinkOpened}>
@@ -354,9 +354,9 @@ const Navbar = () => {
           <UnstyledButton className={classes.link} onClick={toggleTrainingLinks}>
             <Center inline>
               <Box component="span" mr={5}>
-                Features
+                Consulting & Training
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.blue[6]} />
+              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.tomato[7]} />
             </Center>
           </UnstyledButton>
           <Collapse className={classes.subLinkGrid} in={trainingLinkOpened}>

@@ -1,0 +1,43 @@
+.statisticsDisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    background-color: $primary-1;
+    color: $primary-6;
+    font-size: 11px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
+  }
+}
+
+.animatedCounter {
+  text-align: center;
+  padding: 1rem;
+
+  .value {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .plus{
+    top: -10px;
+    position: relative;
+    margin-left: 1px;
+  }
+}

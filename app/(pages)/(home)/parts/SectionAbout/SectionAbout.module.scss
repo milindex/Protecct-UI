@@ -1,3 +1,10 @@
 .sectionAboutContainer{
 	background-color: $white;
+  // height: 70vh;
+  .statsContainer {
+    display: flex;
+    padding: 2rem 0;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
 }
